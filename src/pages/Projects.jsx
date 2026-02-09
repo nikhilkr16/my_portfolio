@@ -148,34 +148,34 @@ export default function Projects() {
               className="flex flex-col items-center"
             >
               {/* Project Title */}
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-4 sm:mb-6 text-center px-2">
                 {currentProject.name}
               </h3>
 
               {/* Project Image - Prominent Display */}
               {currentProject.image && (
-                <div className="w-full max-w-3xl mb-6 rounded-xl overflow-hidden shadow-2xl ring-2 ring-primary/20">
+                <div className="w-full max-w-3xl mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden shadow-xl sm:shadow-2xl ring-1 sm:ring-2 ring-primary/20">
                   <img 
                     src={currentProject.image} 
                     alt={currentProject.name}
-                    className="w-full h-64 md:h-80 object-cover"
+                    className="w-full h-48 sm:h-56 md:h-64 lg:h-80 object-cover"
                   />
                 </div>
               )}
 
               {/* Project Details - Lower Z-Index Effect */}
-              <div className="relative w-full max-w-2xl">
+              <div className="relative w-full max-w-2xl px-2">
                 {/* Description */}
-                <p className="text-gray-300 text-center mb-6 text-base md:text-lg leading-relaxed">
+                <p className="text-gray-300 text-center mb-4 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                   {currentProject.description}
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 justify-center mb-6">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center mb-4 sm:mb-6">
                   {currentProject.techStack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary rounded-full border border-primary/30 hover:bg-primary/20 transition-colors"
+                      className="px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium bg-primary/10 text-primary rounded-full border border-primary/30 hover:bg-primary/20 transition-colors"
                     >
                       {tech}
                     </span>
@@ -183,15 +183,15 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   {currentProject.github && (
                     <a
                       href={currentProject.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-black transition-all"
+                      className="flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-transparent border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-black transition-all"
                     >
-                      <FaGithub className="text-xl" /> View Code
+                      <FaGithub className="text-lg sm:text-xl" /> View Code
                     </a>
                   )}
                   {currentProject.link && (
@@ -199,7 +199,7 @@ export default function Projects() {
                       href={currentProject.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-all"
+                      className="flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-primary text-black font-medium rounded-full hover:bg-primary/90 transition-all"
                     >
                       <FaExternalLinkAlt /> Live Demo
                     </a>
@@ -212,21 +212,21 @@ export default function Projects() {
           {/* Navigation Arrows */}
           <button
             onClick={prevProject}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 hover:bg-primary/40 text-primary transition-all"
+            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-primary/20 hover:bg-primary/40 text-primary transition-all z-10"
             aria-label="Previous project"
           >
-            <FaChevronLeft className="text-xl" />
+            <FaChevronLeft className="text-lg sm:text-xl" />
           </button>
           <button
             onClick={nextProject}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 hover:bg-primary/40 text-primary transition-all"
+            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-primary/20 hover:bg-primary/40 text-primary transition-all z-10"
             aria-label="Next project"
           >
-            <FaChevronRight className="text-xl" />
+            <FaChevronRight className="text-lg sm:text-xl" />
           </button>
 
           {/* Dots Indicator */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          <div className="absolute bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
             {featuredProjects.map((_, idx) => (
               <button
                 key={idx}
@@ -234,9 +234,9 @@ export default function Projects() {
                   setDirection(idx > currentIndex ? 1 : -1)
                   setCurrentIndex(idx)
                 }}
-                className={`w-2 h-2 rounded-full transition-all ${
+                className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all ${
                   idx === currentIndex 
-                    ? 'w-8 bg-primary' 
+                    ? 'w-6 sm:w-8 bg-primary' 
                     : 'bg-primary/30 hover:bg-primary/50'
                 }`}
                 aria-label={`Go to project ${idx + 1}`}

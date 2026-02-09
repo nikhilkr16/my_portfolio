@@ -36,24 +36,26 @@
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl;
+    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl;
   }
 
   .btn-primary {
-    @apply px-8 py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-full 
+    @apply px-6 sm:px-8 py-2.5 sm:py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-full 
            transition-all duration-300 hover:bg-primary hover:text-black hover:scale-105 
-           hover:shadow-[0_0_25px_rgba(183,75,75,0.5)] cursor-pointer inline-block;
+           hover:shadow-[0_0_25px_rgba(183,75,75,0.5)] cursor-pointer inline-block text-sm sm:text-base
+           active:scale-95 touch-manipulation;
   }
 
   .social-icon {
-    @apply w-12 h-12 flex items-center justify-center rounded-full border-2 border-primary 
+    @apply w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full border-2 border-primary 
            text-primary transition-all duration-300 hover:bg-primary hover:text-black 
-           hover:scale-125 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(183,75,75,0.6)];
+           hover:scale-125 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(183,75,75,0.6)]
+           active:scale-95 touch-manipulation;
   }
 
   .nav-link {
     @apply text-white font-medium transition-all duration-300 border-b-2 border-transparent
-           hover:text-primary hover:border-primary;
+           hover:text-primary hover:border-primary text-sm sm:text-base touch-manipulation;
   }
 
   .nav-link-active {

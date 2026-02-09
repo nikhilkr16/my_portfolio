@@ -19,8 +19,8 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
-      <nav className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-white/10">
+      <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center hover:scale-110 transition-transform duration-300">
@@ -32,12 +32,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-link text-base ${isActive(item.path) ? 'nav-link-active' : ''}`}
+                className={`nav-link ${isActive(item.path) ? 'nav-link-active' : ''}`}
               >
                 {item.name}
               </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-primary text-3xl hover:scale-110 transition-transform"
+            className="md:hidden text-primary text-2xl sm:text-3xl hover:scale-110 transition-transform touch-manipulation p-2"
             aria-label="Toggle menu"
           >
             {isOpen ? <HiX /> : <HiMenu />}
@@ -64,13 +64,13 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="flex flex-col space-y-4 pt-6 pb-4">
+              <div className="flex flex-col space-y-3 sm:space-y-4 pt-4 sm:pt-6 pb-3 sm:pb-4">
                 {navItems.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className={`nav-link text-lg ${isActive(item.path) ? 'nav-link-active' : ''}`}
+                    className={`nav-link text-base sm:text-lg py-2 touch-manipulation ${isActive(item.path) ? 'nav-link-active' : ''}`}
                   >
                     {item.name}
                   </Link>

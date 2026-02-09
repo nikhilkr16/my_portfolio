@@ -77,35 +77,35 @@ export default function Home() {
       </motion.div>
 
       {/* Social Links */}
-      <motion.div variants={itemVariants} className="mb-10">
-        <div className="flex gap-4 flex-wrap">
+      <motion.div variants={itemVariants} className="mb-6 sm:mb-10">
+        <div className="flex gap-3 sm:gap-4 flex-wrap justify-start">
           {socialIcons.map((social, index) => (
             <motion.a
               key={index}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon"
+              className="social-icon w-10 h-10 sm:w-12 sm:h-12"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
               aria-label={social.label}
             >
-              <social.icon className="text-xl" />
+              <social.icon className="text-lg sm:text-xl" />
             </motion.a>
           ))}
         </div>
       </motion.div>
 
       {/* CTA Buttons */}
-      <motion.div variants={itemVariants} className="flex gap-4 flex-wrap">
-        <Link to="/contact" className="btn-primary">
+      <motion.div variants={itemVariants} className="flex gap-3 sm:gap-4 flex-wrap">
+        <Link to="/contact" className="btn-primary text-sm sm:text-base px-6 sm:px-8 py-2 sm:py-3">
           Hire Me
         </Link>
         <a
           href={personalInfo.resumeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary"
+          className="btn-primary text-sm sm:text-base px-6 sm:px-8 py-2 sm:py-3"
         >
           Resume
         </a>

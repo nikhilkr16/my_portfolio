@@ -51,11 +51,11 @@ export default function Skills() {
       animate="visible"
       className="min-h-[60vh] flex flex-col justify-center"
     >
-      <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">
+      <motion.h2 variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center text-primary">
         Skills & Expertise
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {skillCategories.map((category) => (
           <motion.div
             key={category.id}
@@ -63,11 +63,11 @@ export default function Skills() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => setActiveModal(category.id)}
-            className="glass-card p-8 cursor-pointer hover:border-primary/50 transition-all text-center"
+            className="glass-card p-6 sm:p-8 cursor-pointer hover:border-primary/50 transition-all text-center touch-manipulation"
           >
-            <div className="text-6xl mb-4">{category.icon}</div>
-            <h3 className="text-2xl font-bold text-primary mb-2">{category.title}</h3>
-            <p className="text-gray-400">Click to view →</p>
+            <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">{category.icon}</div>
+            <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">{category.title}</h3>
+            <p className="text-sm sm:text-base text-gray-400">Click to view →</p>
           </motion.div>
         ))}
       </div>
@@ -81,14 +81,14 @@ export default function Skills() {
           title={category.title}
           size="large"
         >
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
             {category.data.map((skill, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.05 }}
-                className="px-5 py-3 glass-card text-sm font-medium text-gray-200 
+                className="px-3 sm:px-5 py-2 sm:py-3 glass-card text-xs sm:text-sm font-medium text-gray-200 
                            hover:text-primary hover:border-primary/50 transition-all cursor-default"
               >
                 {skill}
