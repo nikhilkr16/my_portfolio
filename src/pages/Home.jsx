@@ -17,7 +17,7 @@ export default function Home() {
   const roles = [
     "Python Developer",
     "Vibe Coder",
-    "Data Analyst",
+    "Analyst",
     "Web Designer",
     "AI Enthusiast",
     "Video Editor"
