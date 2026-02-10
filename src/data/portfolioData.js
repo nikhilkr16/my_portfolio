@@ -219,15 +219,15 @@ export const projects = [
 ]
 
 export const skills = {
-  technical: [
-    "JavaScript", "Python", "React.js", "Node.js", "Express.js",
-    "MongoDB", "MySQL", "Git", "Docker", "REST APIs",
-    "Machine Learning", "Google Cloud", "Azure", "Data Visualization",
-    "NSELIB", "Flask", "TailwindCSS"
+ technical: [
+    "JavaScript", "Python","SQL", "React.js", "Node.js", "Express.js",
+    "MongoDB", "MySQL", "Git", "Streamlit", "APIs",
+    "Machine Learning", "Supply Chain", "Matplotlib","Pandas","Numpy","Scikit-learn","OpenCV", "Data Visualization",
+    "Power BI", "Excel", "TailwindCSS"
   ],
   soft: [
-    "Leadership", "Team Management", "Public Speaking",
-    "Event Organization", "Mentorship", "Problem Solving",
+    "Leadership", "Team Management", "Public Relations",
+    "Event Organization", "Quick Learner","Self Motivated", "Problem Solving",
     "Communication", "Time Management", "Discipline", "Adaptability"
   ],
   certifications: [
