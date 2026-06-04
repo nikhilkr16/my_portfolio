@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <> 
       {/* Google Analytics */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXWWR72EJ0"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EDB8YZ6T4"></script>
       <script>
         {`
           window.dataLayer = window.dataLayer || [];
