@@ -63,15 +63,14 @@ export default function Home() {
 
         <p className="text-base md:text-lg text-gray-400 mt-2 max-w-2xl">
           
-        Ideas are everywhere. Execution is rare.
+Ideas are everywhere. Execution is rare.
 
-          I've always been fascinated by how things work and obsessed with improving them once I understand them. 
-          That curiosity pushed me beyond theory and into building. I learn by testing, breaking, and refining until an idea becomes real.
+I've always been fascinated by how things work and obsessed with improving them once I understand them. That curiosity pushed me beyond theory and into building. I learn by testing, breaking, and refining until an idea becomes real.
 
-          Today, I work at the intersection of Business Analytics, AI Applications, and Product Thinking, turning data and ideas into 
-          solutions that solve real problems and create measurable impact.
-    
-         Not day one. But one day, I aim to build products that people genuinely rely on.
+Today, I work at the intersection of Business Analytics, AI Applications, and Product Thinking, turning data and ideas into solutions that solve real problems and create measurable impact.
+
+Not day one. But one day.
+
 </p>
   
         <p className="text-base md:text-lg text-primary mt-2 font-medium">
