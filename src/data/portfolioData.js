@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Nikhil Kumar",
-  title: "Final-Year B.Tech @ BIT Mesra'26",
-  subtitle: " Final-Year B.Tech @ BIT Mesra'26",
+  title: "B.Tech @ BIT Mesra'26",
+  subtitle: "B.Tech @ BIT Mesra'26",
   location: "Prayagraj, Uttar Pradesh, India",
   email: "nikhilkr3000@gmail.com",
   resumeLink: "https://drive.google.com/file/d/18m6HDbox1LMTZDDcOIZujbbgQUumFtmx/view?usp=sharing",
