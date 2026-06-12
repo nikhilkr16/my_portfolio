@@ -63,13 +63,15 @@ export default function Home() {
 
         <p className="text-base md:text-lg text-gray-400 mt-2 max-w-2xl">
           
-        I’ve always been curious about how things work and obsessed with improving them once 
-            I understand them. That mindset pushed me to learn by building, breaking, 
-            and rebuilding until the logic made sense. Today, I’m a Python-first developer
-             working across data analytics, full-stack Web Design, and applied AI, 
-             with experience shipping dashboards, ML pipelines. 
-             I focus on clean logic, scalability, and real-world impact, and 
-             I care more about delivering usable products than chasing buzzwords or titles.</p>
+        Ideas are everywhere. Execution is rare.
+
+       I've always been fascinated by how things work and even more obsessed with improving them once I understand them. That curiosity pushed me beyond theory and into building. 
+     I learn by testing, breaking, rebuilding, and refining until an idea becomes something real. What excites me most is turning concepts into outcomes. Whether it's an analytics 
+     dashboard, an AI-powered solution, or a product idea, I enjoy taking problems from ambiguity to execution.
+     Today, I work at the intersection of Business Analytics, AI Applications, and Product Thinking, using data, technology, and structured problem-solving to create 
+     solutions that deliver measurable impact.
+  Not day one. But one day, I aim to build products that people genuinely rely on.
+</p>
   
         <p className="text-base md:text-lg text-primary mt-2 font-medium">
           {personalInfo.subtitle}
