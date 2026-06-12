@@ -65,14 +65,13 @@ export default function Home() {
           
         Ideas are everywhere. Execution is rare.
 
-       I've always been fascinated by how things work and even more obsessed with improving them once I understand them. 
-       That curiosity pushed me beyond theory and into building. I learn by testing, breaking, rebuilding, and refining
-       until an idea becomes something real. What excites me most is turning concepts into outcomes. Whether it's an analytics 
-       dashboard, an AI-powered solution, or a product idea, I enjoy taking problems from ambiguity to execution.
-       Today, I work at the intersection of Business Analytics, AI Applications, and Product Thinking, using data, technology,
-       and structured problem-solving to create solutions that deliver measurable impact.
+          I've always been fascinated by how things work and obsessed with improving them once I understand them. 
+          That curiosity pushed me beyond theory and into building. I learn by testing, breaking, and refining until an idea becomes real.
+
+          Today, I work at the intersection of Business Analytics, AI Applications, and Product Thinking, turning data and ideas into 
+          solutions that solve real problems and create measurable impact.
     
-       Not day one. But one day, I aim to build products that people genuinely rely on.
+         Not day one. But one day, I aim to build products that people genuinely rely on.
 </p>
   
         <p className="text-base md:text-lg text-primary mt-2 font-medium">
