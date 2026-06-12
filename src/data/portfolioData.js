@@ -219,17 +219,25 @@ export const projects = [
 ]
 
 export const skills = {
- technical: [
-    "JavaScript", "Python","SQL", "React.js", "Node.js", "Express.js",
-    "MongoDB", "MySQL", "Git", "Streamlit", "APIs",
-    "Machine Learning", "Supply Chain", "Matplotlib","Pandas","Numpy","Scikit-learn","OpenCV", "Data Visualization",
-    "Power BI", "Excel", "TailwindCSS"
-  ],
-  soft: [
-    "Leadership", "Team Management", "Public Relations",
-    "Event Organization", "Quick Learner","Self Motivated", "Problem Solving",
-    "Communication", "Time Management", "Discipline", "Adaptability"
-  ],
+technical: [
+"SQL", "Python", "Power BI", "Excel", "Supply Chain Concept",
+"Data Analysis", "Data Visualization",
+"Business Intelligence", "Product Analytics",
+"Market Research", "Prompt Engineering",
+"AI Applications", "Machine Learning",
+"Pandas", "NumPy", "Matplotlib",
+"Scikit-learn"
+],
+
+soft: [
+"Problem Solving", "Product Thinking",
+"Strategic Thinking", "Data-Driven Decision Making",
+"Leadership", "Stakeholder Management",
+"Communication", "Project Management",
+"Critical Thinking", "Cross-Functional Collaboration",
+"Adaptability", "Time Management"
+]
+,
   certifications: [
     "Conservation Economics",
     "Build and Secure Networks in Google Cloud",
